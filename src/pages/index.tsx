@@ -46,6 +46,7 @@ const IndexPage: NextPage = () => {
                 <a
                   href="https://github.com/prateeksonii"
                   target="_blank"
+                  rel="noreferrer"
                   className="flex items-center gap-2"
                 >
                   <FaGithub />
@@ -54,6 +55,7 @@ const IndexPage: NextPage = () => {
                 <a
                   href="https://www.linkedin.com/in/prateeksoni47/"
                   target="_blank"
+                  rel="noreferrer"
                   className="flex items-center gap-2"
                 >
                   <FaLinkedin />
