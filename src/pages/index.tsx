@@ -18,7 +18,7 @@ const IndexPage: NextPage = () => {
           {/* Left Section */}
           <div>
             <section>
-              <h1 className="text-7xl">Hi, I'm Prateek Soni</h1>
+              <h1 className="text-7xl">Hi, I&lsquo;m Prateek Soni</h1>
               <div className="p-4" />
               <p className="text-2xl leading-relaxed text-justify">
                 Experienced Software Engineer currently working at IBM, India. I
