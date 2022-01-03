@@ -2,6 +2,7 @@ import Path from "@components/Path";
 import type { NextPage } from "next";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Head from "next/head";
+import Projects from "@components/Projects";
 
 const IndexPage: NextPage = () => {
   return (
@@ -14,7 +15,7 @@ const IndexPage: NextPage = () => {
       <div className="bg-dark text-white h-screen">
         <div className="p-10" />
         {/* Grid */}
-        <div className="container m-auto grid grid-cols-2">
+        <div className="container m-auto grid grid-cols-2 gap-8">
           {/* Left Section */}
           <div>
             <section>
@@ -63,6 +64,9 @@ const IndexPage: NextPage = () => {
                 </a>
               </div>
             </section>
+          </div>
+          <div>
+            <Projects />
           </div>
         </div>
       </div>
