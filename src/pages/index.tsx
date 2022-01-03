@@ -15,7 +15,7 @@ const IndexPage: NextPage = () => {
       <div className="bg-dark text-white h-screen">
         <div className="p-10" />
         {/* Grid */}
-        <div className="container m-auto grid grid-cols-2 gap-8">
+        <div className="container ml-auto grid grid-cols-2 gap-8">
           {/* Left Section */}
           <div>
             <section>

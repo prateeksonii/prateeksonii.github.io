@@ -21,7 +21,16 @@ const Projects: FC = () => {
 
   console.log(data.result);
 
-  return <div>ok</div>;
+  return (
+    <div className="flex flex-col items-end">
+      {data.result.map((project) => (
+        <div key={project.id} className="text-left p-8">
+          <div>{project.title}</div>
+          <div>{project.description}</div>
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export default Projects;

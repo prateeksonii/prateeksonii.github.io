@@ -8,16 +8,22 @@ const projectsApiHandler: NextApiHandler = async (req, res) => {
     case "POST": {
       const {
         title,
+        description,
         imageUrl,
+        languageId,
       }: {
         title: string;
+        description: string;
         imageUrl: string;
+        languageId: number;
       } = req.body;
 
       const result = await prismaClient.project.create({
         data: {
           title,
+          description,
           imageUrl,
+          languageId,
         },
       });
 
@@ -28,8 +34,12 @@ const projectsApiHandler: NextApiHandler = async (req, res) => {
     }
 
     case "GET": {
-      const result = await prismaClient.project.findMany();
-      return res.json({
+      const result = await prismaClient.project.findMany({
+        include: {
+          language: true,
+        },
+      });
+      res.json({
         ok: true,
         result,
       });
