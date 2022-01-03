@@ -12,7 +12,7 @@ const IndexPage: NextPage = () => {
         <title>Prateek Soni</title>
       </Head>
       {/* Page */}
-      <div className="bg-dark text-white h-screen">
+      <div className="bg-bg text-white h-screen">
         <div className="p-10" />
         {/* Grid */}
         <div className="container ml-auto grid grid-cols-2 gap-8">

@@ -4,9 +4,13 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'display': 'Gilroy' 
+    },
     extend: {
       colors: {
-        'dark': '#171717'
+        'bg': '#171717',
+        'dark': '#1D1D1D'
       }
     },
   },
