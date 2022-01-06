@@ -23,3 +23,10 @@ model Language {
   name      String    @unique
   Project   Project[]
 }
+
+model Experience {
+  id          Int    @id @default(autoincrement())
+  jobTitle    String
+  company     String
+  description String
+}
