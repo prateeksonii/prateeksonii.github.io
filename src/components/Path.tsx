@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 
 type PathProps = {
+  id: string;
   num: string;
   isSelected?: boolean;
   title: string;
@@ -13,7 +14,7 @@ const Path: NextPage<PathProps> = ({ isSelected, num, title }) => {
 
   return (
     <div
-      className={`flex items-center gap-4 ${fontSize} ${fontWeight}`}
+      className={`flex items-center gap-4 transition-all cursor-pointer ${fontSize} ${fontWeight}`}
       style={isSelected ? { fontWeight: "bold" } : {}}
     >
       <div>{num}</div>

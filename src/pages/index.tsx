@@ -1,10 +1,15 @@
-import Path from "@components/Path";
+import PathComponent from "@components/Path";
 import type { NextPage } from "next";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Head from "next/head";
 import Projects from "@components/Projects";
+import { useState } from "react";
+import { Path } from "@/types";
+import RightSection from "@components/RightSection";
 
 const IndexPage: NextPage = () => {
+  const [selectedPath, setSelectedPath] = useState<Path>("projects");
+
   return (
     <>
       {/* Title */}
@@ -29,17 +34,42 @@ const IndexPage: NextPage = () => {
                 <strong className="underline">dev.to</strong>
               </p>
               <div className="p-10" />
-
               {/* Paths */}
-              <Path isSelected num="01" title="projects" />
+              <div onClick={() => setSelectedPath("projects")}>
+                <PathComponent
+                  id="projects"
+                  isSelected={selectedPath === "projects"}
+                  num="01"
+                  title="projects"
+                />
+              </div>
               <div className="p-4" />
-              <Path num="02" title="experience" />
-
+              <div onClick={() => setSelectedPath("experience")}>
+                <PathComponent
+                  id="experience"
+                  num="02"
+                  title="experience"
+                  isSelected={selectedPath === "experience"}
+                />
+              </div>
               <div className="p-4" />
-              <Path num="03" title="skills" />
-
+              <div onClick={() => setSelectedPath("skills")}>
+                <PathComponent
+                  id="skills"
+                  num="03"
+                  title="skills"
+                  isSelected={selectedPath === "skills"}
+                />
+              </div>
               <div className="p-4" />
-              <Path num="04" title="about me" />
+              <div onClick={() => setSelectedPath("about")}>
+                <PathComponent
+                  id="about"
+                  num="04"
+                  title="about me"
+                  isSelected={selectedPath === "about"}
+                />
+              </div>
             </section>
             <section>
               <div className="p-10" />
@@ -66,7 +96,7 @@ const IndexPage: NextPage = () => {
             </section>
           </div>
           <div>
-            <Projects />
+            <RightSection selectedPath={selectedPath} />
           </div>
         </div>
       </div>
