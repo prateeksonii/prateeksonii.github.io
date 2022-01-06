@@ -5,7 +5,7 @@ type ProjectProps = {
   project: Project & { language: Language };
 };
 
-const Project: FC<ProjectProps> = ({ project }) => {
+const ProjectComponent: FC<ProjectProps> = ({ project }) => {
   const { title, language, description } = project;
 
   return (
@@ -21,4 +21,4 @@ const Project: FC<ProjectProps> = ({ project }) => {
   );
 };
 
-export default Project;
+export default ProjectComponent;

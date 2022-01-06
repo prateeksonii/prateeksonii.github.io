@@ -1,5 +1,6 @@
 import { Path } from "@/types";
 import { FC } from "react";
+import Experiences from "./Experiences";
 import Projects from "./Projects";
 
 type RightSectionProps = {
@@ -7,8 +8,13 @@ type RightSectionProps = {
 };
 
 const RightSection: FC<RightSectionProps> = ({ selectedPath }) => {
-  if (selectedPath == "projects") {
+  console.log(selectedPath);
+  if (selectedPath === "projects") {
     return <Projects />;
+  }
+
+  if (selectedPath === "experience") {
+    return <Experiences />;
   }
 
   return null;

@@ -1,9 +1,8 @@
+import { fetcher } from "@/utils";
 import { Language, Project } from "@prisma/client";
 import type { FC } from "react";
 import useSWR from "swr";
 import ProjectComponent from "./Project";
-
-const fetcher = (url: RequestInfo) => fetch(url).then((res) => res.json());
 
 const Projects: FC = () => {
   const { data, error } = useSWR<{
