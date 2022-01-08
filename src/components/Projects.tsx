@@ -19,10 +19,15 @@ const Projects: FC = () => {
   }
 
   return (
-    <div className="flex flex-col items-end">
-      {data.result.map((project) => (
-        <ProjectComponent key={project.id} project={project} />
-      ))}
+    <div className="text-white py-40 container m-auto">
+      <h2 className="text-4xl text-center font-bold">
+        Here are some of my projects
+      </h2>
+      <div className="mt-20 flex flex-wrap gap-8">
+        {data.result.map((project) => (
+          <ProjectComponent key={project.id} project={project} />
+        ))}
+      </div>
     </div>
   );
 };

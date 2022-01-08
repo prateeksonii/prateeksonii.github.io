@@ -5,12 +5,14 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'display': 'Gilroy' 
+      'display': 'CocoSharpL',
+      'body': 'CocoSharpL'
     },
     extend: {
       colors: {
-        'bg': '#171717',
-        'dark': '#1D1D1D'
+        'primary-dark': '#33325F',
+        'primary': '#4B95EB',
+        'dark': '#24234F'
       }
     },
   },
