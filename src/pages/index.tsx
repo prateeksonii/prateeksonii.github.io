@@ -1,3 +1,5 @@
+import About from "@components/About";
+import Contact from "@components/Contact";
 import Experiences from "@components/Experiences";
 import Hero from "@components/Hero";
 import Projects from "@components/Projects";
@@ -9,6 +11,8 @@ const IndexPage: FC = () => {
       <Hero />
       <Projects />
       <Experiences />
+      <About />
+      <Contact />
     </div>
   );
 };

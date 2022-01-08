@@ -1,9 +1,7 @@
-import { PrismaClient } from "@prisma/client";
+import { prismaClient } from "@/utils/db";
 import { NextApiHandler } from "next";
 
 const projectsApiHandler: NextApiHandler = async (req, res) => {
-  const prismaClient: PrismaClient = new PrismaClient();
-
   switch (req.method) {
     case "POST": {
       const {

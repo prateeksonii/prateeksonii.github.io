@@ -1,18 +1,21 @@
 import { prismaClient } from "@/utils/db";
 import { NextApiHandler } from "next";
 
-const languagesApiHandler: NextApiHandler = async (req, res) => {
+const messagesApiHandler: NextApiHandler = async (req, res) => {
   switch (req.method) {
     case "POST": {
       const {
         name,
+        message,
       }: {
         name: string;
+        message: string;
       } = req.body;
 
-      const result = await prismaClient.language.create({
+      const result = await prismaClient.message.create({
         data: {
-          name,
+          senderName: name,
+          message,
         },
       });
 
@@ -23,7 +26,7 @@ const languagesApiHandler: NextApiHandler = async (req, res) => {
     }
 
     case "GET": {
-      const result = await prismaClient.language.findMany();
+      const result = await prismaClient.message.findMany();
       res.json({
         ok: true,
         result,
@@ -32,4 +35,4 @@ const languagesApiHandler: NextApiHandler = async (req, res) => {
   }
 };
 
-export default languagesApiHandler;
+export default messagesApiHandler;

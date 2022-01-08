@@ -30,3 +30,9 @@ model Experience {
   company     String
   description String
 }
+
+model Message {
+  id         Int    @id @default(autoincrement())
+  senderName String
+  message    String
+}

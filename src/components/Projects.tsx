@@ -20,7 +20,7 @@ const Projects: FC = () => {
 
   return (
     <div id="projects" className="text-white py-40 container m-auto">
-      <h2 className="text-4xl text-center font-bold">
+      <h2 className="text-6xl text-center font-bold text-primary-light">
         Here are some of my projects
       </h2>
       <div className="mt-20 grid grid-cols-3 gap-8">
