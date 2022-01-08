@@ -5,7 +5,7 @@ import { FC } from "react";
 const Navbar: FC = () => {
   return (
     <div className="pt-8 flex items-center">
-      <Image src="/images/logo.svg" height={80} width={80} />
+      <Image src="/images/logo.svg" height={80} width={80} alt="logo" />
       <div className="text-white flex items-center gap-8 text-lg ml-10">
         <Link href="#experience" passHref>
           <a>work experience</a>

@@ -9,9 +9,10 @@ const Hero: FC = () => {
           <Navbar />
           <section className="w-4/6 m-auto mt-40 text-center">
             <h1 className="text-7xl text-white leading-relaxed">
-              Hi, I'm <strong className="text-primary">Prateek Soni</strong> and
-              I'm a full stack <strong className="text-primary">web</strong>{" "}
-              developer
+              Hi, I&apos;m{" "}
+              <strong className="text-primary">Prateek Soni</strong> and
+              I&apos;m a full stack{" "}
+              <strong className="text-primary">web</strong> developer
             </h1>
             <div className="mt-12 flex justify-center items-center gap-8">
               <button className="bg-primary text-white px-8 py-4 rounded-full text-xl font-bold">
