@@ -19,10 +19,15 @@ const Experiences: FC = () => {
   }
 
   return (
-    <div className="flex flex-col items-end">
-      {data.result.map((experience) => (
-        <ExperienceComponent key={experience.id} experience={experience} />
-      ))}
+    <div id="experience" className="text-white py-10 container m-auto">
+      <h2 className="text-4xl text-center font-bold">
+        This is my work experience
+      </h2>
+      <div className="mt-20 grid grid-cols-3 gap-8">
+        {data.result.map((experience) => (
+          <ExperienceComponent key={experience.id} experience={experience} />
+        ))}
+      </div>
     </div>
   );
 };

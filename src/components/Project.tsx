@@ -9,14 +9,9 @@ const ProjectComponent: FC<ProjectProps> = ({ project }) => {
   const { title, language, description } = project;
 
   return (
-    <div className="text-left p-8 w-2/3 bg-dark">
-      <div className="font-display font-light uppercase text-lg tracking-widest">
-        {language.name}
-      </div>
-      <div className="p-3" />
-      <div className="font-display font-bold text-4xl">{title}</div>
-      <div className="p-2" />
-      <div className="text-lg">{description}</div>
+    <div className="bg-primary p-20 flex items-center justify-center flex-col text-center">
+      <div className="font-display font-bold text-4xl mt-2">{title}</div>
+      <div className="text-lg mt-2">{description}</div>
     </div>
   );
 };

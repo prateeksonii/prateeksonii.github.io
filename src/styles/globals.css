@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: Gilroy;
-  src: url(/fonts/Gilroy-Light.otf);
+  font-family: CocoSharpL;
+  src: url(/fonts/CocoSharpL-Regular.otf);
 }
 
 @font-face {
-  font-family: Gilroy;
-  src: url(/fonts/Gilroy-ExtraBold.otf);
+  font-family: CocoSharpL;
+  src: url(/fonts/CocoSharpL-Bold.otf);
   font-weight: bold;
 }
 
@@ -19,10 +19,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Gilroy", sans-serif;
-  font-weight: bold;
+  font-family: "CocoSharpL", sans-serif;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "CocoSharpL", sans-serif;
+  @apply bg-dark;
 }
