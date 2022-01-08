@@ -7,10 +7,10 @@ const Navbar: FC = () => {
     <div className="pt-8 flex items-center">
       <Image src="/images/logo.svg" height={80} width={80} />
       <div className="text-white flex items-center gap-8 text-lg ml-10">
-        <Link href="#" passHref>
+        <Link href="#experience" passHref>
           <a>work experience</a>
         </Link>
-        <Link href="#" passHref>
+        <Link href="#projects" passHref>
           <a>projects</a>
         </Link>
         <Link href="#" passHref>
