@@ -18,7 +18,7 @@ const Navbar: FC = () => {
         </Link>
       </div>
       <div className="text-white text-lg ml-auto">
-        <Link href="#" passHref>
+        <Link href="#contact" passHref>
           <a className="px-8 py-3 font-bold bg-primary rounded-full">contact</a>
         </Link>
       </div>
