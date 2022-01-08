@@ -3,6 +3,7 @@ import { FC } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Image from "next/image";
 
 const Contact: FC = () => {
   const { register, handleSubmit } = useForm<ContactFormFields>();
@@ -26,9 +27,7 @@ const Contact: FC = () => {
   return (
     <div id="contact" className="container m-auto py-12">
       <div className="mt-12 p-8 bg-primary-dark rounded-lg text-white">
-        <h2 className="text-6xl text-center font-bold text-primary-light">
-          Contact me
-        </h2>
+        <h2 className="text-4xl font-bold text-primary-light">Contact me</h2>
         <div className="mt-8 grid grid-cols-2">
           <div>
             <form onSubmit={handleSubmit(onSubmit)}>
@@ -73,6 +72,7 @@ const Contact: FC = () => {
               </a>
             </div>
           </div>
+          <Image src="/images/chat.svg" height="100%" width="100%" />
         </div>
       </div>
     </div>
