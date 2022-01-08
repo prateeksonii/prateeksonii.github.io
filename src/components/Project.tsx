@@ -9,7 +9,7 @@ const ProjectComponent: FC<ProjectProps> = ({ project }) => {
   const { title, language, description } = project;
 
   return (
-    <div className="bg-primary p-20 flex items-center justify-center flex-col text-center">
+    <div className="bg-primary p-20 flex items-center justify-center flex-col text-center rounded-xl">
       <div className="font-display font-bold text-4xl mt-2">{title}</div>
       <div className="text-lg mt-2">{description}</div>
     </div>

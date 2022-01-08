@@ -20,7 +20,7 @@ const Experiences: FC = () => {
 
   return (
     <div id="experience" className="text-white py-10 container m-auto">
-      <h2 className="text-4xl text-center font-bold">
+      <h2 className="text-6xl text-center font-bold text-primary-light">
         This is my work experience
       </h2>
       <div className="mt-20 grid grid-cols-3 gap-8">

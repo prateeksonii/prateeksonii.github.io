@@ -9,7 +9,7 @@ const ExperienceComponent: FC<ExperienceProps> = ({ experience }) => {
   const { company, jobTitle, description } = experience;
 
   return (
-    <div className="bg-primary p-10 flex justify-center flex-col">
+    <div className="bg-primary p-10 flex justify-center flex-col rounded-xl">
       <div className="font-display text-sm mt-2 uppercase tracking-widest">
         {jobTitle}
       </div>
