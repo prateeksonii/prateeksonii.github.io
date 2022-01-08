@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FC } from "react";
 import Navbar from "./Navbar";
 
@@ -15,9 +16,11 @@ const Hero: FC = () => {
               <strong className="text-primary">web</strong> developer
             </h1>
             <div className="mt-12 flex justify-center items-center gap-8">
-              <button className="bg-primary text-white px-8 py-4 rounded-full text-xl font-bold">
-                View work
-              </button>
+              <Link href="#experience" passHref>
+                <a className="bg-primary text-white px-8 py-4 rounded-full text-xl font-bold">
+                  View work
+                </a>
+              </Link>
               <a
                 href="https://drive.google.com/uc?export=download&id=1yWMb-hHl5rNoOT3zX2J5nXjUTcsFJzvD"
                 download
